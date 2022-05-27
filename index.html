@@ -7,11 +7,12 @@
     <title>Document</title>
     <!-- Stylesheets -->
     <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/skin-1.css" />
+    <link rel="stylesheet" href="styles/skins/skin-1.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
+    <link rel="stylesheet" href="styles/style-switcher.css" />
   </head>
   <body>
     <!-- Main Container -->
@@ -386,6 +387,24 @@
       <!-- Main Content End -->
     </div>
     <!-- Main Container End -->
+    <!-- Color Theme Switcher -->
+    <div class="style-switcher">
+      <div class="style-switcher-toggler s-icon">
+        <i class="fas fa-cog fa-spin"></i>
+      </div>
+      <div class="day-night s-icon">
+        <i class="fas fa-moon"></i>
+      </div>
+      <h4>Theme Colors</h4>
+      <div class="skins">
+        <span class="skin-1" onclick="setActiveStyle('skin-1')"></span>
+        <span class="skin-2" onclick="setActiveStyle('skin-2')"></span>
+        <span class="skin-3" onclick="setActiveStyle('skin-3')"></span>
+        <span class="skin-4" onclick="setActiveStyle('skin-4')"></span>
+        <span class="skin-5" onclick="setActiveStyle('skin-5')"></span>
+      </div>
+    </div>
+    <!-- Color Them Switcher End -->
     <!-- Scripts -->
     <script src="js/script.js"></script>
   </body>
